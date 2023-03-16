@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capstone1</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&amp;family=Open+Sans&amp;display=swap" rel="stylesheet">
+</head>
+<body class="body">
+  <!-- Nav Bar Section -->
+  <div>
+    <div class="container-fluid">
+      <nav class="_nav fixed-top text-light py-md-2 px-md-3">
+        <div class="d-flex">
+          <div class="mr-md-auto pr-5 pl-1">
+            DJ's PORTFOLIO
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="text-reset" href="#HomeAlong">Home</a> 
+            <a class="text-reset ml-md-5 px-1" href="#AboutMeAndYou">About Me</a> 
+            <a class="text-reset ml-md-5 px-1" href="#Projector">Projects</a> 
+            <a class="text-reset ml-md-5 px-1" href="#Reachforthestars">Reach Me</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div><!-- End of Nav Bar section -->
+  <!-- Content Section -->
+  <div class="_sectioncontent mx-md-5">
+    <!-- Start of Home -->
+    <div id="HomeAlong">
+      <!-- Start of Container div -->
+      <div class="container-fluid min-vh-xl-100  text-center">
+        <!-- Start of Margin Div -->
+        <div class="mx-md-5">
+          <!-- Start of Row Div -->
+          <div class="row">
+            <!-- Start of Column Div -->
+            <div class="col-lg-6 col-12 my-5">
+              <!-- Add friend Button -->
+              <div class="d-flex justify-content-around">
+                <div class="ml-md-5">
+                  🟢@dj69 is at Tokyo, Japan
+                </div>
+                <button type="button" id="addbutton" class="btn btn-outline-dark" data-toggle="modal" data-target="#addModal">Add friend</button> 
+                <!-- Modal -->
+                <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="_addmodalheader modal-header">
+                        <h5 class="modal-title text-light" id="addModalModalLabel">Let's be friends and start a connection!</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      </div>
+                      <div class="_addmodalbody modal-body">
+                        <form class="needs-validation" novalidate="">
+                          <div class="form-group">
+                            <label for="InputName">Name</label> 
+                            <input type="text" class="form-control" id="InputName" placeholder="Your Name" required=""> 
+                            <label for="exampleInputEmail1" placeholder="name@example.com">Email address</label> 
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required=""> 
+                            <label for="InputNumber">Contact Number</label>
+                            <input type="tel" class="form-control" id="InputNumber" placeholder="+63 900 000 0000" required=""> <label for="SelectConcern">Concern</label> 
+                            <select id="SelectConcern" class="form-control">
+                              <option selected>
+                                Quotation
+                              </option>
+                              <option>
+                                Quotation2
+                              </option>
+                            </select> <label for="InputMessage">Message</label> 
+                            <textarea class="form-control" id="InputMessage" rows="5"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="_addmodalfooter modal-footer">
+                        <button type="button" id="addsendbutton" class="btn" data-toggle="modal" data-target="#sendemailModal">Send Email</button> <!-- Send Email Modal -->
+                        <div class="modal fade" id="sendemailModal" tabindex="-1" role="dialog" aria-labelledby="sendemailModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content bg text-success">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="sendemailModalLabel">.</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                              </div>
+                              <div class="modal-body display-5">
+                                <strong>Email Sent Successfully</strong>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- End of Send email Modal -->
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End of Add friend button -->
+              </div><!-- My image -->
+              <img class="img-fluid" src="./images/me.png" width="350" alt="2"> <!-- End of My image -->
+              <!-- Lower Buttons -->
+              <div>
+                <!-- Like Button -->
+                <button type="button" id="likebutton" class="btn btn-outline-dark" data-toggle="modal" data-target="#likeModal">💜</button> <!-- Modal -->
+                <div class="modal fade" id="likeModal" tabindex="-1" role="dialog" aria-labelledby="likeModalModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="likeModalModalLabel">Arigatou gozaimasu – ありがとう ございます</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      </div>
+                      <div class="modal-body">
+                        Ahhhhhhhhh! I 💜 you too!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End of like button -->
+                <!-- Comment Button -->
+                <button type="button" id="commentbutton" class="btn btn-outline-dark mx-3" data-toggle="modal" data-target="#commentModal">Comment</button> <!-- Modal -->
+                <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="commentModalLabel">Tell me something</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Write here</label> 
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Comment</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End of like button -->
+                <!-- Share Button -->
+                <button type="button" id="sharebutton" class="btn btn-outline-dark" data-toggle="modal" data-target="#shareModal">Share</button> <!-- Modal -->
+                <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="shareModalModalLabel">Sharing is caring</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      </div>
+                      <div class="modal-body">
+                        This Portfolio has been shared to your Facebook!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End of like button -->
+              </div><!-- End of lower buttons -->
+              <!-- Start of Home texts -->
+              <h1 class="font-weight-bold display-3">Software Engineer ㊗</h1>
+              <div class="_homeP pb-lg-5">
+                A web developer that is a diplomatic listener and a careful planner: Patient, logical, and perceptive..
+              </div><!-- End of Home texts -->
+            </div><!-- End of Column Div -->
+          </div><!-- End of Row Div -->
+        </div><!-- End of Margin Div -->
+      </div><!-- End of Container div -->
+    </div><!-- End of Home-->
+    <!-- Start of About me Section -->
+    <div>
+      <!-- Start of About me Container -->
+      <div id="AboutMe" class="container-fluid min-vh-xl-100">
+        <!-- Start of About me contents -->
+        <div>
+          <h1 id="AboutMeAndYou" class="pl-md-5 pt-5 pb-5 text-center text-md-left">About Me</h1>
+          <!-- Start of Collapsible about me -->
+          <div class="container pb-5">
+            <!-- Start of accordion -->
+            <div class="accordion" id="accordionExample">
+              <!-- Start of Personal Item -->
+              <div id="cardcolor" class="card border-warning">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0"></h2>
+                  <div>
+                    <h2 class="mb-0"><button id="buttonfont" class="btn btn-link btn-block text-left text-reset font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Personal</button></h2>
+                  </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="container">
+                      <table class="table-hover ml-md-5">
+                        <tbody>
+                          <tr>
+                            <td>Full Name: Engr. Derick Jay Rebalde Artezuela</td>
+                          </tr>
+                          <tr>
+                            <td>Nickname: DJ</td>
+                          </tr>
+                          <tr>
+                            <td>Age: 24</td>
+                          </tr>
+                          <tr>
+                            <td>Birthday: April 2, 1998 ♈</td>
+                          </tr>
+                          <tr>
+                            <td>Address: Apartment 69, Prada Aoyama Building , Shinjuku Golden Gai , Tokyo , Japan</td>
+                          </tr>
+                          <tr>
+                            <td>Phone Number: 096969696969</td>
+                          </tr>
+                          <tr>
+                            <td>Email: derickjayyy12345@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Profile links: <a class="text-reset color-warning" href="https://www.facebook.com/JamesReid.Careless" target="_blank"><u>Facebook</u></a> <a class="text-reset" href="https://www.instagram.com/supremo_dp/" target="_blank"><u>Instagram</u></a>
+                            </td>
+                          </tr>
+                          <tr class="text-md-right">
+                            <td>""For every action there is an equal and opposite reaction.""</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End of Personal Item -->
+              <!-- Start of Education Item -->
+              <div id="cardcolor" class="card border-warning">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0"><button id="buttonfont" class="btn btn-link btn-block text-left collapsed text-reset font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Education</button></h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <!-- Start of container -->
+                    <div class="container">
+                      <table class="table-hover ml-md-5">
+                        <tbody>
+                          <tr>
+                            <td>Developer Career Program</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">Zuit Coding Bootcamp (#1 Coding Bootcamp in the Philippines)</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">March 6, 2023 - April 22, 2023</th>
+                          </tr>
+                          <tr>
+                            <td>⛤Best Capstone Award 🏆</td>
+                          </tr>
+                          <tr>
+                            <td>⛤Final Grade 96.0%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table-hover ml-md-5 mt-3">
+                        <tbody>
+                          <tr>
+                            <td>Civil Engineering Licensure Examination</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">Mega Review Center Manila</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">June 3, 2019 - November 15, 2019</th>
+                          </tr>
+                          <tr>
+                            <td>⛤Average 88.7% (passed)</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table-hover ml-md-5 mt-3">
+                        <tbody>
+                          <tr>
+                            <td>Bachelor of Science in Civil Engineering</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">Northwest Samar State University</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">June 2014 - May 2019</th>
+                          </tr>
+                          <tr>
+                            <td>⛤GPA 1.7</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- End of container -->
+                  </div>
+                </div>
+              </div>
+              <!-- End of Education Item -->
+              <!-- Start of Skills Item -->
+              <div id="cardcolor" class="card border-warning">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0"><button id="buttonfont" class="btn btn-link btn-block text-left collapsed text-reset font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Skills</button></h2>
+                </div>
+                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <!-- Start of Skills contents -->
+                    <div class="container-fluid-xl">
+                      <!-- Start of WEB DEVELOPMENT -->
+                      <h3 class="font-weight-bold text-center">WEB DEVELOPMENT 💻</h3><!-- Start of Programming Essentials -->
+                      <h4 class="font-weight-bold text-center">1. Programming Essentials</h4><!-- Start Flex -->
+                      <div class="d-md-flex mb-3 pl-md-5 justify-content-md-center text-center">
+                        <div class="media pr-5">
+                          <img src="./logo/git.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Git</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/gitlab.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Gitlab</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/gitbash.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Git bash</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/sublime.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Sublime</p>
+                          </div>
+                        </div>
+                      </div><!-- End of Programming Essentials -->
+                      <!-- Start of Front-end Development -->
+                      <h4 class="font-weight-bold text-center">2. Front-end Development</h4><!-- Start Flex -->
+                      <div class="d-md-flex mb-3 pl-lg-5 justify-content-md-center text-center">
+                        <div class="media pr-md-5">
+                          <img src="./logo/html.png" width="50" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">HTML</p>
+                          </div>
+                        </div>
+                        <div class="media pr-md-5">
+                          <img src="./logo/css.png" width="50" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">CSS</p>
+                          </div>
+                        </div>
+                        <div class="media pr-md-5">
+                          <img src="./logo/bootstrap.png" width="50" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Bootstrap</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-md-flex pl-lg-5 mt-md-3 mb-3 justify-content-md-center text-center">
+                        <div class="media pr-md-5">
+                          <img src="./logo/wireframe.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Wireframe and Mockups</p>
+                          </div>
+                        </div>
+                        <div class="media pr-md-5">
+                          <img src="./logo/google.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Google Chrome</p>
+                          </div>
+                        </div>
+                      </div><!-- End of Front-end Development -->
+                      <!-- Start of Back-end Development -->
+                      <h4 class="font-weight-bold text-center">3. Back-end Development</h4><!-- Start Flex -->
+                      <div class="d-md-flex pl-lg-5 justify-content-md-center text-center">
+                        <div class="media">
+                          <img src="./logo/java.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">JavaScript</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img src="./logo/mongodb.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">MongoDB</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img src="./logo/rest.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">REST Architecture</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img src="./logo/express.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Express.js</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-md-flex mb-3 pl-lg-5 justify-content-md-center text-center">
+                        <div class="media pr-5">
+                          <img src="./logo/nodejs.png" width="75" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Node.js</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/postman.png" width="75" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Postman</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/heroku.png" width="75" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Heroku</p>
+                          </div>
+                        </div>
+                      </div><!-- End of Back-end Development -->
+                      <!-- Start of Full-stack Development -->
+                      <h4 class="font-weight-bold text-center">4. Full-stack Development</h4><!-- Start Flex -->
+                      <div class="d-md-flex mb-5 pl-lg-5 justify-content-md-center text-center">
+                        <div class="media pr-lg-5 pr-md-2">
+                          <img src="./logo/mongodb.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">MongoDB</p>
+                          </div>
+                        </div>
+                        <div class="media pr-lg-5 pr-md-2">
+                          <img src="./logo/express.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Express.js</p>
+                          </div>
+                        </div>
+                        <div class="media pr-lg-5 pr-md-2">
+                          <img src="./logo/react.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">React</p>
+                          </div>
+                        </div>
+                        <div class="media pr-lg-5 pr-md-2">
+                          <img src="./logo/nodejs.png" width="75" class="align-self-center mr-md-2" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Node.js</p>
+                          </div>
+                        </div>
+                      </div><!-- End of Full-stack Development -->
+                      <!-- End of WEB DEVELOPMENT -->
+                      <!-- Start of CIVIL ENGINEERING TOOLS -->
+                      <h3 class="font-weight-bold text-center">CIVIL ENGINEERING TOOLS 📏</h3><!-- Start of cad -->
+                      <h4 class="font-weight-bold text-center">1. Computer Aided Drafting</h4><!-- Start Flex -->
+                      <div class="d-md-flex mb-3 pl-5 justify-content-md-center">
+                        <div class="media pr-5">
+                          <img src="./logo/autocad.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Autocad</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/sketchup.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">SketchUp</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/enscape.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Enscape3D</p>
+                          </div>
+                        </div>
+                      </div><!-- End of cad  -->
+                      <!-- Start of other tools  -->
+                      <h4 class="font-weight-bold text-center">2. Other tools</h4><!-- Start Flex -->
+                      <div class="d-md-flex mb-3 pl-5 justify-content-md-center">
+                        <div class="media pr-5">
+                          <img src="./logo/staad.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Bentley Staad Pro</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/foundation.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Bentley Foundation</p>
+                          </div>
+                        </div>
+                        <div class="media pr-5">
+                          <img src="./logo/microsoft.png" width="50" class="align-self-center mr-3" alt="...">
+                          <div class="media-body">
+                            <p class="mt-3">Microsoft Office</p>
+                          </div>
+                        </div>
+                      </div><!-- End of other tools  -->
+                      <!--End of CIVIL ENGINEERING TOOLS  --><!-- End of Skills contents -->
+                    </div>
+                  </div>
+                </div><!-- End of Container -->
+              </div><!-- End of Skills Item -->
+              <!-- Start of Experience Item -->
+              <div id="cardcolor" class="card border-warning">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0"><button id="buttonfont" class="btn btn-link btn-block text-left collapsed text-reset font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Experience</button></h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <!-- Start of container -->
+                    <div class="container">
+                      <table class="table-hover ml-md-5">
+                        <tbody>
+                          <tr>
+                            <td>Consultant Engineer 👷</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">Plan International</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">Feb 2022 - Nov 2023</th>
+                          </tr>
+                          <tr>
+                            <td>-Provide engineering designs,cost estimates,BoQs and implementation plans</td>
+                          </tr>
+                          <tr>
+                            <td>-Provide basic knowledge on WASH to local partners</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table-hover ml-md-5 mt-3">
+                        <tbody>
+                          <tr>
+                            <td>Construction Site Inspector👷</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">DITO Telecommunications</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">June , 2020 - December 2021</th>
+                          </tr>
+                          <tr>
+                            <td>-Monitor all work carried out on the construction of Telecommunication towers and Internet Data centers</td>
+                          </tr>
+                          <tr>
+                            <td>-Ensure safety and quality standards are upheld.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table-hover ml-md-5 mt-3">
+                        <tbody>
+                          <tr>
+                            <td>Field Engineer👷</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">Absolute Symmetry Construction Inc.</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">Jan 2020 -June 2020</th>
+                          </tr>
+                          <tr>
+                            <td>-Quality assurance while observing health and safety standards</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table-hover ml-md-5 mt-3">
+                        <tbody>
+                          <tr>
+                            <td>Intern👷</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">New Golden City Builders</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">April 2018 -June 2018</th>
+                          </tr>
+                          <tr>
+                            <td>-Preparing construction plans using computer aided drafting</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table-hover ml-md-5 mt-3">
+                        <tbody>
+                          <tr>
+                            <td>Engineering Aide👷</td>
+                          </tr>
+                          <tr>
+                            <td class="font-italic">DPWH</td>
+                          </tr>
+                          <tr>
+                            <th class="font-weight-light">April 2017 -May 2017</th>
+                          </tr>
+                          <tr>
+                            <td>-Assists engineers with technical tasks and project support</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- End of container -->
+                  </div>
+                </div>
+              </div><!-- End of Experience Item -->
+          
+            </div>
+            <!-- End of accordion -->
+          </div>
+          <!-- End of Collapsible -->
+        </div>
+        <!-- End of About me contents -->
+      </div>
+      <!-- End of About me container -->
+    </div>
+    <!-- End of About me Section -->
+
+    <!-- Start of Project Section -->
+    <div>
+      <div id="c0" class="container-fluid">
+        <h1 id="Projector" class="pl-md-5 pt-5 pb-5 text-center text-md-left">My Projects</h1>
+        <div class="container">
+        <!-- Project Contents -->
+          <div id="c1" class="container text-center">
+            
+            <h2 class="text-md-left pt-3 pl-md-3 font-weight-bold font-italic">A. HTML</h2>
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/101.png">
+                <div class="pt-3 pb-2">
+                  <a class="btn btn-dark" href="./projects/1/activity-a.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-2 order-first order-md-last">
+                <h2>HTML Introduction Activity</h2>
+              </div>
+            </div>
+
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-2">
+                <h2>HTML Attributes and Links</h2>
+              </div>
+
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/102.png">
+                <div class="pt-3">
+                  <a class="btn btn-dark" href="./projects/2/index.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/103.png">
+                <div class="pt-3 pb-2">
+                  <a class="btn btn-dark" href="./projects/3/contact.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-2 order-first order-md-last">
+                <h2>HTML Forms and Tables</h2>
+              </div>
+            </div>
+
+            <h2 class="text-md-left pt-3 pl-md-3 font-weight-bold font-italic">B. CSS</h2>
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-2">
+                <h2>CSS Introduction</h2>
+              </div>
+
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/104.png">
+                <div class="pt-3">
+                  <a class="btn btn-dark" href="./projects/4/index.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              
+            </div>
+
+
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/105.png">
+                <div class="pt-3 pb-2">
+                  <a class="btn btn-dark" href="./projects/5/index.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-2 order-first order-md-last">
+                <h2>CSS Box Model and Flexbox Layouting</h2>
+              </div>
+            </div>
+
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-2">
+                <h2>CSS Styling and Positioning Properties</h2>
+              </div>
+
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/106.png">
+                <div class="pt-3">
+                  <a class="btn btn-dark" href="./projects/6/index.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <h2 class="text-md-left pt-3 pl-md-3 font-weight-bold font-italic">C. BOOTSTRAP</h2>
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/107.png">
+                <div class="pt-3 pb-2">
+                  <a class="btn btn-dark" href="./projects/7/activity2.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-2 order-first order-md-last">
+                <h2>Bootstrap Introduction and Simple Styles</h2>
+              </div>
+            </div>
+
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-2">
+                <h2>Bootstrap Grid System</h2>
+              </div>
+
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/108.png">
+                <div class="pt-3">
+                  <a class="btn btn-dark" href="./projects/8/activity2.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="row align-items-center px-md-5">
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/109.png">
+                <div class="pt-3 pb-2">
+                  <a class="btn btn-dark" href="./projects/9.1/activity2.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pt-2 order-first order-md-last">
+                <h2>Bootstrap Flex</h2>
+              </div>
+            </div>
+
+            <div class="row align-items-center px-md-5 pb-5">
+              <div class="col-12 col-md-6 pt-2">
+                <h2>Bootstrap Components</h2>
+              </div>
+
+              <div class="col-12 col-md-6 pt-md-5 pt-2"> 
+                <img class="img-fluid" src="./images/110.png">
+                <div class="pt-3">
+                  <a class="btn btn-dark" href="./projects/10/index.html" role="button" target="_blank">Click to open</a>
+                </div>
+              </div>
+              
+            </div>
+
+
+
+
+
+          </div>
+        <!-- End Project Contents -->
+        </div>
+      </div>
+
+    </div>
+    <!-- End Of Project Section -->
+
+    <!-- Start of reach me section -->
+    <div>
+      <div id="c99" class="container-fluid">
+        <h1 id="Reachforthestars" class="pl-md-5 pt-5 pb-5 text-center text-md-left">Reach Me!</h1>
+        
+        <div class="container">
+          <div id="c100" class="container text-center">
+            <div class="row">
+              <div class="col-12">
+                <h2> Want us to be connected?</h2>
+                <h2> Click the button below to send me an email</h2>
+                <div>
+                  <button type="button" id="addbutton" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#addModal">Click me</button> 
+                  <!-- Modal -->
+                  <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="_addmodalheader modal-header">
+                          <h5 class="modal-title text-light" id="addModalModalLabel">Let's be friends and start a connection!</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="_addmodalbody modal-body">
+                          <form class="needs-validation" novalidate="">
+                            <div class="form-group">
+                              <label for="InputName">Name</label> 
+                              <input type="text" class="form-control" id="InputName" placeholder="Your Name" required=""> 
+                              <label for="exampleInputEmail1" placeholder="name@example.com">Email address</label> 
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required=""> 
+                              <label for="InputNumber">Contact Number</label>
+                              <input type="tel" class="form-control" id="InputNumber" placeholder="+63 900 000 0000" required=""> <label for="SelectConcern">Concern</label> 
+                              <select id="SelectConcern" class="form-control">
+                                <option selected>
+                                  Quotation
+                                </option>
+                                <option>
+                                  Quotation2
+                                </option>
+                              </select> <label for="InputMessage">Message</label> 
+                              <textarea class="form-control" id="InputMessage" rows="5"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="_addmodalfooter modal-footer">
+                          <button type="button" id="addsendbutton" class="btn" data-toggle="modal" data-target="#sendemailModal">Send Email</button> <!-- Send Email Modal -->
+                          <div class="modal fade" id="sendemailModal" tabindex="-1" role="dialog" aria-labelledby="sendemailModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content bg text-success">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="sendemailModalLabel">.</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                </div>
+                                <div class="modal-body display-5">
+                                  <strong>Email Sent Successfully</strong>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- End of Send email Modal -->
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End of Add friend button -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- End Of reach me -->
+    
+  </div>
+  <!-- End of Content Section -->
+  
+  <!-- Start of Footer -->
+  <div>
+    <footer>
+      <div class="container-fluid-xl text-center">
+        <div id="footercard" class="card">
+          <div id="footercardbody" class="card-body">
+            <h5 class="card-title text-md-left pl-md-5">Online Portfolio - made by Derick Jay Artezuela</h5>
+            <p class="card-text text-md-left pl-md-5">Want to be an amazing web developer like me?<a href="https://zuitt.co/" class="text-success" target="_blank">Visit Zuitt</a></p>
+            <a href="#HomeAlong" class="btn btn-dark">Back to top</a>
+          </div>
+        </div>
+        
+      </div>
+      
+    </footer>
+  </div>
+  <!-- End of footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

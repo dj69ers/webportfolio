@@ -1,0 +1,124 @@
+/*CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Hina Mincho', serif;
+  }
+
+html {
+  scroll-behavior: smooth
+}
+
+.body {
+  background-color: #FBB95D;
+}
+
+._nav {
+  background-color:#562151 !important ;
+}
+
+._sectioncontent
+{
+  background: url('./images/japan.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed ;
+
+
+}
+/*@media (max-width: 1000px) {
+    ._sectioncontent {
+        min-height: 30vh;}
+}*/
+
+
+
+h1 {
+  font-weight: bolder;
+}
+
+._homeP {
+  font-size: 2rem;
+  font-weight: 200;
+/*  background-color: rgba(215, 113, 59,0.5 )*/
+  color: white;
+  font-style: italic;
+}
+
+._addmodalheader {
+  background-color: #562151;
+}
+
+._addmodalbody {
+  background-color: #fb8987;
+}
+
+._addmodalfooter {
+  background-color: #562151;
+}
+
+#addsendbutton {
+  background-color: #d7713b;
+}
+
+#AboutMe {
+  background-color: rgba(255, 233, 202, 0.6);
+}
+
+#buttonfont {
+  font-size: 1.5rem;
+}
+
+
+
+#cardcolor {
+  background-color: rgba(86, 33, 81, 0.6);
+}
+
+.card-body {
+  background-color: rgba(215, 113, 59, 0.7);
+}
+
+td {
+  font-size: 1.3rem;
+}
+
+#zuitt {
+  font-weight: 200;
+}
+
+#c0 {
+  background-color: rgba(251, 137, 135, 0.7);
+}
+
+.gg {
+  background-color: rgba(12, 123, 11, 0.5);
+}
+
+#c1 {
+  background-color: rgba(255, 233, 202, 0.6);
+}
+
+#c99 {
+  background-color: rgba(215, 113, 59, 0.7);
+  height: 400px;
+}
+
+#c100 {
+  background-color: rgba(86, 33, 81, 0.7);
+  height: 200px;
+}
+
+#footercard {
+  background-color: lightpink;
+}
+
+#footercardbody {
+  background-color: lightpink;
+}
+
